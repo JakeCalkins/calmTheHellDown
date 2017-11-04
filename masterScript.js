@@ -43,3 +43,10 @@ function itemFourLocationStorage(){
 	document.getElementById("app").value = applianceLocation4.options[applianceLocation4.selectedIndex].text;
 	var displayLocationFour = applianceLocation4.options[applianceLocation4.selectedIndex].text;
 }
+
+var hold = 0;
+//var slider = ["bedroom","bathroom", "kitchen","living"];
+function pleaseWork(num){
+	hold = num;
+	console.log(hold);
+}

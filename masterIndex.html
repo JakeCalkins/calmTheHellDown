@@ -112,15 +112,28 @@
                 <h2>Estimate usage</h2>
                 <h3>Use the sliders to determine your usage per room:</h3>
                 <div class="slider">
-                    <input type="range" min="0" max="15" value="3" class="slider1" step="1">
+                    <input type="range" min="0" max="15" value="7" class="slider1" id="COMEON">
+                    <p>Value: <span id="demo"></span></p>
                 </div>
-                <div class="slider">
+                <script>
+                var slider1 = document.getElementById("COMEON");
+                output = document.getElementById("demo");
+                output.innerHTML = slider1.value;
+
+                slider1.oninput = function() {
+                	output.innerHTML = this.value;
+                  //console.log(slider1.value);
+                  pleaseWork(slider1.value);
+                }
+
+                </script>
+                <div class="slider1">
                     <input type="range" min="0" max="15" value="8" class="slider1" step="1">
                 </div>
-                <div class="slider">
+                <div class="slider2">
                     <input type="range" min="0" max="15" value="2" class="slider1" step="1">
                 </div>
-                <div class="slider">
+                <div class="slider3">
                     <input type="range" min="0" max="15" value="13" class="slider1" step="1">
                 </div>
 
