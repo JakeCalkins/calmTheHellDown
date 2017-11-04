@@ -12,12 +12,12 @@ body {
     padding: 0;
     font-family: 'Neuton', serif;
 }
-
+/*
 div {
     border-style: solid;
     border-width: 1px;
     border-color: black;
-}
+}*/
 
 h1 {
     font-family: 'Open Sans', sans-serif;
@@ -56,20 +56,26 @@ h3 {
 
 .slider1 {
     -webkit-appearance: none;
-    width: 100%;
-    height: 5em;
-    border-radius: 5px;   
-    background: white;
-    outline: black;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+    overflow: hidden;
+    width: 50%;
+    height: 6em;
+    border-radius: 10em;   
+    margin: 10px;
+    padding: 0px;
+    background-color:rgb(115, 250, 125);
 }
 
 .slider1::-webkit-slider-thumb {
     -webkit-appearance: none;
-    appearance: none;
-    width: 1em;
-    height: 5em;
-    background: #000000;
-    cursor:grabbing;
+    width: 2em;
+    height: 6em;
+    background: #ffffff;
+    cursor: ew-resize;
+    border-color: #cbc4ff;
+    border-width: 1px;
+    border-style: solid;
+    margin: 10px;
+    box-shadow: 100em 0 0 100em rgb(204, 255, 208);
 }
+
+
