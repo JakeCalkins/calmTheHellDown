@@ -1,8 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 h1 {
-    font-size: 50em;
+    font-size: 6em;
+    margin: 0;
+    padding: 0;
+    border-style: 
+    border-bottom: 100% 3px gray;
 }
 
-br {
-    height: 2px;
-    color: gray;
+h2 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
 }
