@@ -7,9 +7,9 @@ font-weight: 800;
 */
 
 body {
-    margin: 0;
-    padding: 0;
+
     font-family: 'Abel', sans-serif;
+    background-color:black;
 }
 /*
 div {
@@ -21,36 +21,58 @@ div {
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    background-color: gray;
-    color: white;
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 4em;
+    padding: 0.1em 0.5em 0.1em 1em;
+    color: black;
     font-size: 6em;
-    margin: 0;
-    padding: 0;
+}
+
+h1:hover{
+    border-color:rgb(115, 250, 125);
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 h2 {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 3em;
-    margin: 0;
-    padding: 0;
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 4em;
+    padding: 0.1em 0.5em 0.1em 1em;
+    color: black;
+}
+
+h2:hover {
+    background-color: black;
+    overflow: hidden;
+    color:white;
 }
 
 h3 {
-    font-family: 'Abel', sans-serif;
-    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
     font-size: 2em;
     margin: 0;
     padding: 0;
 }
 
 .topContainer {
-    display: grid;
-    height: 8em;
+
 }
 
 .mainContainer {
-    display: grid;
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 4em;
+    padding: 0.1em 0.5em 0.1em 1em;
 }
 
 .slider1 {
@@ -59,7 +81,6 @@ h3 {
     width: 50%;
     height: 6em;
     border-radius: 10em;   
-    margin: 10px;
     padding: 0px;
     background-color:rgb(115, 250, 125);
 }
@@ -73,7 +94,6 @@ h3 {
     border-color: #cbc4ff;
     border-width: 1px;
     border-style: solid;
-    margin: 10px;
     box-shadow: 100em 0 0 100em rgb(204, 255, 208);
 }
 
@@ -85,7 +105,6 @@ select {
   font: inherit;
   line-height: 1.5em;
   padding: 0.5em 3.5em 0.5em 1em;
-  margin: 10px;      
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
