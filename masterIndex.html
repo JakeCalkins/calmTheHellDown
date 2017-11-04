@@ -18,8 +18,8 @@
 
     <div class="mainContainer">
         <div class="inputItems">
-                <h2>Input</h2>
-                <h3> Please enter in your appliance, WPH, and the area of where it is located</h3>
+                <h2>INPUT</h2>
+                <h3> Enter your item, its wattage and tag:</h3>
 
                 <!-- Item 1 -->
                 <form>
@@ -272,8 +272,14 @@
                             <option value="2" selected="selected">Office</option>
                             <option value="3">Kitchen</option>
                         </select>
+<<<<<<< HEAD
                 </form>
 
+=======
+
+                </form>
+                <button id="addButton" onclick="onAddButtonClick()">Add Electronic</button>
+>>>>>>> 40bb877a8f784f9275a88540371b77e7e284b387
         </div>
 
         <div id="displayItem1"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation1"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayItem2"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation2"> <p hidden><input type="text" id="app" size="20"></p> </div>
@@ -285,10 +291,9 @@
         <div id="displayItem13"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation13"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayItem14"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation14"> <p hidden><input type="text" id="app" size="20"></p> </div>
         <div id="displayItem15"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation15"> <p hidden><input type="text" id="app" size="20"></p>
 
-        <button id="addButton" onclick="onAddButtonClick()">Add Electronic</button>
 
         <div class="inputCost">
-                <h2>Input Cost</h2>
+                <h2>COST</h2>
                 <h3>Enter your state (US):</h3>
                 <select name="state" class="state">
                       <option value="" selected="selected">Select a State</option>
@@ -347,28 +352,41 @@
                 <h3>Here is your energy cost:</h3>
         </div>
         <div class="sliders">
-                <h2>Estimate usage</h2>
+                <h2>USAGE</h2>
                 <h3>Use the sliders to determine your usage per room:</h3>
                 <div class="slider">
-                    <input type="range" min="0" max="15" value="3" class="slider1" step="1">
+                    <input type="range" min="0" max="15" value="7" class="slider1" id="COMEON">
+                    <p>Value: <span id="demo"></span></p>
                 </div>
-                <div class="slider">
+                <script>
+                var slider1 = document.getElementById("COMEON");
+                output = document.getElementById("demo");
+                output.innerHTML = slider1.value;
+
+                slider1.oninput = function() {
+                	output.innerHTML = this.value;
+                  //console.log(slider1.value);
+                  pleaseWork(slider1.value);
+                }
+
+                </script>
+                <div class="slider1">
                     <input type="range" min="0" max="15" value="8" class="slider1" step="1">
                 </div>
-                <div class="slider">
+                <div class="slider2">
                     <input type="range" min="0" max="15" value="2" class="slider1" step="1">
                 </div>
-                <div class="slider">
+                <div class="slider3">
                     <input type="range" min="0" max="15" value="13" class="slider1" step="1">
                 </div>
 
         </div>
         <div class="conclusion">
-                <h2>Conclusions from your data</h2>
+                <h2>CONCLUSIONS</h2>
                 <h3>This is what we found:</h3>
         </div>
         <div class="recommendations">
-                <h2>Recommendations from your data</h2>
+                <h2>RECOMMENDATIONS</h2>
                 <h3>This is what we found:</h3>
         </div>
     </div>

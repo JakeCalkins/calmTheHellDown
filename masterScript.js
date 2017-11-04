@@ -73,6 +73,14 @@ function itemFourLocationStorage(){
 	displayLocationFour = applianceLocation4.options[applianceLocation4.selectedIndex].text;
 }
 
+<<<<<<< HEAD
+var hold = 0;
+//var slider = ["bedroom","bathroom", "kitchen","living"];
+function pleaseWork(num){
+	hold = num;
+	console.log(hold);
+}
+=======
 function itemFiveNameStorage(){
 	document.getElementById("app").value = applianceName5.options[applianceName5.selectedIndex].text;
 	displayItemFive = applianceName5.options[applianceName5.selectedIndex].text;
@@ -219,7 +227,11 @@ function onAddButtonClick(){
 		document.getElementById("addButton").style.display = "none";
 	}
 }
+<<<<<<< HEAD
 
 function assemble(var name, var kwh, var location ){
 	
 }
+=======
+>>>>>>> 6e5124f219aee73ccf6e0f842de6201d24420f51
+>>>>>>> 40bb877a8f784f9275a88540371b77e7e284b387

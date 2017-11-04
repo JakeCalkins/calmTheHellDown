@@ -43,25 +43,25 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-size: 3em;
-    background-color: white;
-    border: 1px solid #000000;
+     background-color: black;
+    overflow: hidden;
+    color:white;
     border-radius: 4em;
     padding: 0.1em 0.5em 0.1em 1em;
-    color: black;
 }
 
 h2:hover {
-    background-color: black;
-    overflow: hidden;
-    color:white;
+     background-color: white;
+    border: 1px solid #000000;
+   color:black;
+    box-shadow: 0em .1em .4em rgb(0, 0, 0);
 }
 
 h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-size: 2em;
-    margin: 0;
-    padding: 0;
+    
 }
 
 .topContainer {
@@ -69,10 +69,7 @@ h3 {
 }
 
 .mainContainer {
-    background-color: white;
-    border: 1px solid #000000;
-    border-radius: 4em;
-    padding: 0.1em 0.5em 0.1em 1em;
+
 }
 
 .slider1 {
@@ -83,6 +80,8 @@ h3 {
     border-radius: 10em;   
     padding: 0px;
     background-color:rgb(115, 250, 125);
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .slider1::-webkit-slider-thumb {
@@ -91,10 +90,13 @@ h3 {
     height: 6em;
     background: #ffffff;
     cursor: ew-resize;
-    border-color: #cbc4ff;
     border-width: 1px;
     border-style: solid;
     box-shadow: 100em 0 0 100em rgb(204, 255, 208);
+}
+
+.slider input:hover {
+    box-shadow: 0em .1em 1em black;
 }
 
 select {
@@ -124,6 +126,8 @@ select {
     5px 5px,
     1px 1.5em;
   background-repeat: no-repeat;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 select:focus {
@@ -142,4 +146,92 @@ select:focus {
   background-repeat: no-repeat;
   border-color: rgb(115, 250, 125);
   outline: 0;
+}
+
+select:hover {
+        box-shadow: 0em .1em 1em black;
+}
+
+input {
+    background-color: white;
+  border: 1px solid #000000;
+  border-radius: 4em;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+}
+
+input:hover {
+        box-shadow: 0em .1em 1em black;
+}
+.inputItems {
+    background-color: white;
+    border: 1px solid #000000;
+    padding: 0.1em 3.5em 0.5em 1em;
+    margin:1em;
+
+}
+
+.inputCost {
+    background-color: white;
+    border: 1px solid #000000;
+    padding: 0.1em 3.5em 0.5em 1em;
+    margin:1em;
+
+}
+
+.sliders {
+    background-color: white;
+    border: 1px solid #000000;
+    padding: 0.1em 3.5em 0.5em 1em;
+    margin:1em;
+
+}
+
+.conclusion {
+    background-color: white;
+    border: 1px solid #000000;
+    padding: 0.1em 3.5em 0.5em 1em;
+    margin:1em;
+
+}
+
+.recommendations {
+    background-color: white;
+    border: 1px solid #000000;
+    padding: 0.1em 3.5em 0.5em 1em;
+    margin:1em;
+
+}
+
+#addButton {
+    background-color: black;
+      border: 1px solid #000000;
+    overflow: hidden;
+    color:white;
+      border-radius: 4em;
+      display: inline-block;
+      font: inherit;
+      line-height: 1.5em;
+      padding: 0.5em 1.5em 0.5em 1.3em;
+    margin-left:16px;
+    -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+}
+
+#addButton:hover {
+    background-color: white;
+    box-shadow: 0em .1em 1em black;
+    color:black;
+    border: 1px solid rgb(115, 250, 125);
 }
