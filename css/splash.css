@@ -20,21 +20,6 @@ h1 {
     font-size: 6em;
     margin: 0;
     padding: 0;
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-    border-style:
-    border-bottom: 100% 3px gray;
-=======
-    border-style: solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 100%;
-    border-color: #c7c7c7;
-    border-width: 3px;
->>>>>>> 426ced74a50e19dad4b8ba4a5adbf6b657091720
-=======
->>>>>>> Stashed changes
 }
 
 h2 {
@@ -43,16 +28,6 @@ h2 {
     font-size: 3em;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-}
-=======
-    border-style: solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 100%;
-    border-color: #c7c7c7;
-    border-width: 3px;
 }
 
 .container {
@@ -102,10 +77,4 @@ h2 {
 
 .logo img {
     width: 6em;
-<<<<<<< Updated upstream
-    position: absolute;
 }
->>>>>>> 426ced74a50e19dad4b8ba4a5adbf6b657091720
-=======
-}
->>>>>>> Stashed changes
