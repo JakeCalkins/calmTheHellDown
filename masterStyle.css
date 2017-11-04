@@ -43,18 +43,18 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-size: 3em;
-    background-color: white;
-    border: 1px solid #000000;
+     background-color: black;
+    overflow: hidden;
+    color:white;
     border-radius: 4em;
     padding: 0.1em 0.5em 0.1em 1em;
-    color: black;
 }
 
 h2:hover {
-    background-color: black;
-    overflow: hidden;
-    color:white;
-    box-shadow: 0em .1em .4em rgb(115, 250, 125);
+     background-color: white;
+    border: 1px solid #000000;
+   color:black;
+    box-shadow: 0em .1em .4em rgb(0, 0, 0);
 }
 
 h3 {
