@@ -1,0 +1,70 @@
+/* Font weights and styles:
+font-family: 'Neuton', serif;
+font-weight: 300;
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+font-weight: 700;
+font-weight: 800;
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Neuton', serif;
+}
+
+img {
+    position: fixed;
+    width:100%;
+    z-index: -1;
+}
+
+.top {
+    position: absolute;
+    
+}
+
+.bottom {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(48, 27, 160, 0.26);
+    bottom: 0;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: black;
+    font-size: 10em;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    width: 45%;
+    padding: 1em;
+    border-radius: 10em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    box-shadow: 0 5px 20px black;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    background-color: white;
+}
+
+button:hover {
+    box-shadow: 0 5px 20px gray;
+    border-color: white;
+    background-color: #301ba0;
+    color: white;
+}

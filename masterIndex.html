@@ -13,16 +13,14 @@
 <body>
     
     <div class="topContainer">
-        <div class="topLeft">
-        </div>
-        <div class="topRight">
-        </div>
+            <h1>CONSRV</h1>
     </div>
     
     <div class="mainContainer">
         <div class="inputItems">
                 <h2>Input</h2>
                 <h3> Please enter in your appliance, WPH, and the area of where it is located</h3>
+<<<<<<< HEAD
                 
                 <!-- Item 1 -->
                 <form>
@@ -93,19 +91,30 @@
                 </form>
 
 
+=======
+                <select id="appliance" onchange="functionA()">
+                    <option value="1">TV</option>
+                    <option value="2" selected="selected">Computer</option>
+                    <option value="3">Oven</option>
+                </select>
+>>>>>>> 7d30a9424623c7bb073211dbf50755d0ddc7142f
         </div>
         
         <div id="displayItem1"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation1"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayItem2"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation2"> <p hidden><input type="text" id="app" size="20"></p> </div>
         <div id="displayItem3"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation3"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayItem4"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation4"> <p hidden><input type="text" id="app" size="20"></p> </div>
 
-        <div class="inputTimeAndCost">
-                <h2>Input Time and Cost</h2>
+        <div class="inputCost">
+                <h2>Input Cost</h2>
                 <h3>Drag the slider to show how much time you spend awake using your appliances and devices:</h3>
                 <h3>Enter your watt hour cost:</h3>
         </div>
         <div class="sliders">
                 <h2>Estimate usage</h2>
                 <h3>Use the sliders to determine your usage per room:</h3>
+                <div class="slider1">
+                    <input type="range" min="1" max="100" value="50" class="slider1" id="myRange">
+                </div>
+
         </div>
         <div class="conclusion">
                 <h2>Conclusions from your data</h2>
