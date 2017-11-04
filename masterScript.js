@@ -1,3 +1,5 @@
+var applianceCounter = 5;
+
 function itemOneNameStorage(){
 	document.getElementById("app").value = applianceName1.options[applianceName1.selectedIndex].text;
 	var displayItemOne = applianceName1.options[applianceName1.selectedIndex].text;
@@ -146,4 +148,41 @@ function itemFifteenNameStorage(){
 function itemFifteenLocationStorage(){
 	document.getElementById("app").value = applianceLocation15.options[applianceLocation15.selectedIndex].text;
 	var displayLocationFifteen = applianceLocation15.options[applianceLocation15.selectedIndex].text;
+}
+
+function onAddButtonClick(){
+	applianceCounter++;
+	console.log(applianceCounter);
+
+	if(applianceCounter == 6){
+		document.getElementById("applianceForm6").style.display = "block";
+	}
+	if(applianceCounter == 7){
+		document.getElementById("applianceForm7").style.display = "block";
+	}
+	if(applianceCounter == 8){
+		document.getElementById("applianceForm8").style.display = "block";
+	}
+	if(applianceCounter == 9){
+		document.getElementById("applianceForm9").style.display = "block";
+	}
+	if(applianceCounter == 10){
+		document.getElementById("applianceForm10").style.display = "block";
+	}
+	if(applianceCounter == 11){
+		document.getElementById("applianceForm11").style.display = "block";
+	}
+	if(applianceCounter == 12){
+		document.getElementById("applianceForm12").style.display = "block";
+	}
+	if(applianceCounter == 13){
+		document.getElementById("applianceForm13").style.display = "block";
+	}
+	if(applianceCounter == 14){
+		document.getElementById("applianceForm14").style.display = "block";
+	}
+	if(applianceCounter == 15){
+		document.getElementById("applianceForm15").style.display = "block";
+		document.getElementById("addButton").style.display = "none";
+	}
 }

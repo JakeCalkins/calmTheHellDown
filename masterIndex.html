@@ -20,12 +20,7 @@
         <div class="inputItems">
                 <h2>Input</h2>
                 <h3> Please enter in your appliance, WPH, and the area of where it is located</h3>
-<<<<<<< HEAD
-                
-=======
 
-
->>>>>>> cbdcf2f59914f7a1023e4bbdd8fa57332aa38207
                 <!-- Item 1 -->
                 <form>
                     <select id="applianceName1" onchange="itemOneNameStorage()">
@@ -111,7 +106,7 @@
                 </form>
 
                 <!-- Item 6 -->
-                <form>
+                <form id="applianceForm6" hidden>
                     <select id="applianceName6" onchange="itemSixNameStorage()">
                         <option value="1">TV</option>
                         <option value="2" selected="selected">Computer</option>
@@ -128,7 +123,7 @@
                 </form>
 
                  <!-- Item 7 -->
-                <form>
+                <form id="applianceForm7" hidden>
                     <select id="applianceName7" onchange="itemSevenNameStorage()">
                         <option value="1">TV</option>
                         <option value="2" selected="selected">Computer</option>
@@ -145,7 +140,7 @@
                 </form>
 
                 <!-- Item 8 -->
-                <form>
+                <form id="applianceForm8" hidden>
                     <select id="applianceName8" onchange="itemEightNameStorage()">
                         <option value="1">TV</option>
                         <option value="2" selected="selected">Computer</option>
@@ -162,7 +157,7 @@
                 </form>
 
                 <!-- Item 9 -->
-                <form>
+                <form id="applianceForm9" hidden>
                     <select id="applianceName9" onchange="itemNineNameStorage()">
                         <option value="1">TV</option>
                         <option value="2" selected="selected">Computer</option>
@@ -179,7 +174,7 @@
                 </form>
 
                 <!-- Item 10 -->
-                <form>
+                <form id="applianceForm10" hidden>
                     <select id="applianceName10" onchange="itemTenNameStorage()">
                         <option value="1">TV</option>
                         <option value="2" selected="selected">Computer</option>
@@ -196,7 +191,7 @@
                 </form>
 
                  <!-- Item 11 -->
-                <form>
+                <form id="applianceForm11" hidden>
                     <select id="applianceName11" onchange="itemElevenNameStorage()">
                         <option value="1">TV</option>
                         <option value="2" selected="selected">Computer</option>
@@ -213,7 +208,7 @@
                 </form>
 
                 <!-- Item 12 -->
-                <form>
+                <form id="applianceForm12" hidden>
                     <select id="applianceName12" onchange="itemTwelveNameStorage()">
                         <option value="1">TV</option>
                         <option value="2" selected="selected">Computer</option>
@@ -229,7 +224,7 @@
                         </select>
                 </form>
                 <!-- Item 13 -->
-                <form>
+                <form id="applianceForm13" hidden>
                     <select id="applianceName13" onchange="itemThirteenNameStorage()">
                         <option value="1">TV</option>
                         <option value="2" selected="selected">Computer</option>
@@ -246,7 +241,7 @@
                 </form>
 
                 <!-- Item 14 -->
-                <form>
+                <form id="applianceForm14" hidden>
                     <select id="applianceName14" onchange="itemFourteenNameStorage()">
                         <option value="1">TV</option>
                         <option value="2" selected="selected">Computer</option>
@@ -263,7 +258,7 @@
                 </form>
 
                  <!-- Item 15 -->
-                <form>
+                <form id="applianceForm15" hidden>
                     <select id="applianceName15" onchange="itemFifteenNameStorage()">
                         <option value="1">TV</option>
                         <option value="2" selected="selected">Computer</option>
@@ -279,17 +274,6 @@
                         </select>
                 </form>
 
-
-<<<<<<< HEAD
-=======
-
-                <select id="appliance" onchange="functionA()">
-                    <option value="1">TV</option>
-                    <option value="2" selected="selected">Computer</option>
-                    <option value="3">Oven</option>
-                </select>
-
->>>>>>> cbdcf2f59914f7a1023e4bbdd8fa57332aa38207
         </div>
 
         <div id="displayItem1"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation1"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayItem2"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation2"> <p hidden><input type="text" id="app" size="20"></p> </div>
@@ -300,6 +284,8 @@
         <div id="displayItem11"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation11"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayItem12"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation12"> <p hidden><input type="text" id="app" size="20"></p> </div>
         <div id="displayItem13"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation13"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayItem14"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation14"> <p hidden><input type="text" id="app" size="20"></p> </div>
         <div id="displayItem15"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation15"> <p hidden><input type="text" id="app" size="20"></p>
+
+        <button id="addButton" onclick="onAddButtonClick()">Add Electronic</button>
 
         <div class="inputCost">
                 <h2>Input Cost</h2>
