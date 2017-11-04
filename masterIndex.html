@@ -23,12 +23,80 @@
         <div class="inputItems">
                 <h2>Input</h2>
                 <h3> Please enter in your appliance, WPH, and the area of where it is located</h3>
-                <select id="appliance" onchange="functionA()">
-                    <option value="1">TV</option>
-                    <option value="2" selected="selected">Computer</option>
-                    <option value="3">Oven</option>
-</select>
+                
+                <!-- Item 1 -->
+                <form>
+                    <select id="applianceName1" onchange="itemOneNameStorage()">
+                        <option value="1">TV</option>
+                        <option value="2" selected="selected">Computer</option>
+                        <option value="3">Oven</option>
+                    </select>
+
+                        <input type="text" id="item1Power"></input>
+
+                        <select id="applianceLocation" onchange="itemOneLocationStorage()">
+                            <option value="1">Living Room</option>
+                            <option value="2" selected="selected">Office</option>
+                            <option value="3">Kitchen</option>
+                        </select>
+                </form>
+
+                <!-- Item 2 -->
+                <form>
+                    <select id="applianceName2" onchange="itemTwoNameStorage()">
+                        <option value="1">TV</option>
+                        <option value="2" selected="selected">Computer</option>
+                        <option value="3">Oven</option>
+                    </select>
+
+                        <input type="text" id="item2Power"></input>
+
+                        <select id="applianceLocation2" onchange="itemTwoLocationStorage()">
+                            <option value="1">Living Room</option>
+                            <option value="2" selected="selected">Office</option>
+                            <option value="3">Kitchen</option>
+                        </select>
+                </form>
+
+                 <!-- Item 3 -->
+                <form>
+                    <select id="applianceName3" onchange="itemThreeNameStorage()">
+                        <option value="1">TV</option>
+                        <option value="2" selected="selected">Computer</option>
+                        <option value="3">Oven</option>
+                    </select>
+
+                        <input type="text" id="item3Power"></input>
+
+                        <select id="applianceLocation3" onchange="itemThreeLocationStorage()">
+                            <option value="1">Living Room</option>
+                            <option value="2" selected="selected">Office</option>
+                            <option value="3">Kitchen</option>
+                        </select>
+                </form>
+
+                <!-- Item 4 -->
+                <form>
+                    <select id="applianceName4" onchange="itemFourNameStorage()">
+                        <option value="1">TV</option>
+                        <option value="2" selected="selected">Computer</option>
+                        <option value="3">Oven</option>
+                    </select>
+
+                        <input type="text" id="item4Power"></input>
+
+                        <select id="applianceLocation4" onchange="itemFourLocationStorage()">
+                            <option value="1">Living Room</option>
+                            <option value="2" selected="selected">Office</option>
+                            <option value="3">Kitchen</option>
+                        </select>
+                </form>
+
+
         </div>
+        
+        <div id="displayItem1"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation1"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayItem2"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation2"> <p hidden><input type="text" id="app" size="20"></p> </div>
+        <div id="displayItem3"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation3"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayItem4"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation4"> <p hidden><input type="text" id="app" size="20"></p> </div>
 
         <div class="inputTimeAndCost">
                 <h2>Input Time and Cost</h2>
