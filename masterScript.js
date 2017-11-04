@@ -1,9 +1,5 @@
-
-$(document).ready(
-  function() {
-  var country = ["Australia", "Bangladesh", "Denmark", "Hong Kong", "Indonesia", "Netherlands", "New Zealand", "South Africa"];
-  $("#country").select2({
-    data: country
-  });
-  
-});
+function functionA(){
+	var e = document.getElementById("appliance");
+	document.getElementById("app").value = appliance.options[appliance.selectedIndex].text;
+	
+}
