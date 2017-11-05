@@ -36,10 +36,7 @@ var nameArr = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14",
 var locArr = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19"];
 
 var bedHour;
-<<<<<<< HEAD
 var offHour;
-=======
->>>>>>> 058a7002e18f0e35786d044143ab667b863cfd7c
 var officeHour;
 var livHour;
 var kitHour;
@@ -259,7 +256,7 @@ function onAddButtonClick(){
 		document.getElementById("addButton").style.display = "none";
 	}
 }
-<<<<<<< HEAD
+
 function onContinueButtonClick(){
 	kwhOne = document.getElementById("item1Power");
 	kwhTwo = document.getElementById("item2Power");
@@ -337,10 +334,11 @@ function calculateEnergyConsumption(){
 		totalEnergy = totalEnergy + ((item15Power * timeAssignment(displayLocationFifteen)) / 1000)	
 	}*/
 
+	console.log("I will now print totalEnergy: ");
+	console.log(totalEnergy);
+
 	document.getElementById("app").value = region.options[region.selectedIndex].value;
 	regionString = region.options[region.selectedIndex].value;
-
-	console.log(regionString);
 	
 	if(regionString.localeCompare("NE") == 0) regionFactor = 121.60;
 	if(regionString.localeCompare("MA") == 0) regionFactor = 112.81;
@@ -351,7 +349,6 @@ function calculateEnergyConsumption(){
 	if(regionString.localeCompare("WSC") == 0) regionFactor = 128.81;
 	if(regionString.localeCompare("M") == 0) regionFactor = 99.91;
 
-	console.log(regionFactor);
 	var cout = document.getElementById("stateEnergy");
 	cout.innerHTML = regionFactor;
 
@@ -363,10 +360,6 @@ function timeAssignment(location){
 	if(location.localeCompare("Kitchen") == 0) timeResult = kitHour;
 	if(location.localeCompare("Bedroom") == 0) timeResult = bedHour;
 }
-=======
-
-
->>>>>>> 058a7002e18f0e35786d044143ab667b863cfd7c
 
 function storeBedHour(num){
 	bedHour = num;

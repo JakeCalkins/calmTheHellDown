@@ -136,4 +136,5 @@ function timeAssignment(location){
                       <option value="ESC">East South Central</option>
                       <option value="WSC">West South Central</option>
                       <option value="M">Mountain</option>
+            </div>
 
