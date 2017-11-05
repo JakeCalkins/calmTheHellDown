@@ -19,7 +19,7 @@
     <div class="mainContainer">
         <div class="inputItems">
                 <h2>INPUT</h2>
-                <h3> Enter your item, its wattage and tag:</h3>
+                <h3> Enter your item, its kiloWatt per hour (kWh) and tag:</h3>
 
                 <!-- Item 1 -->
                 <form>
@@ -465,6 +465,8 @@
         <div class="recommendations">
                 <h2>RECOMMENDATIONS</h2>
                 <h3>This is what we found:</h3>
+                <p>Here is your recommendation: <span id="CompRecommend"></span><span id="TVRecommend"></span><span id="OvenRecommend"></span><span id="FridgeRecommend"></span></p>
+                <input type="button" value="ButtonCalc" onclick="recommendation();">
         </div>
     </div>
 </body>
