@@ -16,6 +16,22 @@ var displayItemThirteen;
 var displayItemFourteen;
 var displayItemFifteen;
 
+var kwhOne;
+var kwhTwo;
+var kwhThree;
+var kwhFour;
+var kwhFive;
+var kwhSix;
+var kwhSeven;
+var kwhEight;
+var kwhNine;
+var kwhTen;
+var kwhEleven;
+var kwhTwelve;
+var kwhThirteen;
+var kwhFourteen;
+var kwhFifteen;
+
 var displayLocationOne;
 var displayLocationTwo;
 var displayLocationThree;
@@ -31,6 +47,10 @@ var displayLocationTwelve;
 var displayLocationThirteen;
 var displayLocationFourteen;
 var displayLocationFifteen;
+
+var time1;
+var time2;
+var time3;
 
 
 function itemOneNameStorage(){
@@ -184,7 +204,6 @@ function itemFifteenLocationStorage(){
 
 function onAddButtonClick(){
 	applianceCounter++;
-	console.log(applianceCounter);
 
 	if(applianceCounter == 6){
 		document.getElementById("applianceForm6").style.display = "block";
@@ -217,4 +236,52 @@ function onAddButtonClick(){
 		document.getElementById("applianceForm15").style.display = "block";
 		document.getElementById("addButton").style.display = "none";
 	}
+}
+
+function onContinueButtonClick(){
+	kwhOne = document.getElementById("item1Power");
+	kwhTwo = document.getElementById("item2Power");
+	kwhThree = document.getElementById("item3Power");
+	kwhFour = document.getElementById("item4Power");
+	kwhFive = document.getElementById("item5Power");
+	if(applianceCounter > 5){
+		kwhSix = document.getElementById("item6Power");
+	}
+	if(applianceCounter > 6){
+		kwhSix = document.getElementById("item7Power");
+	}
+	if(applianceCounter > 7){
+		kwhSix = document.getElementById("item8Power");
+	}
+	if(applianceCounter > 8){
+		kwhSix = document.getElementById("item9Power");
+	}
+	if(applianceCounter > 9){
+		kwhSix = document.getElementById("item10Power");
+	}
+	if(applianceCounter > 10){
+		kwhSix = document.getElementById("item11Power");
+	}
+	if(applianceCounter > 11){
+		kwhSix = document.getElementById("item12Power");
+	}
+	if(applianceCounter > 12){
+		kwhSix = document.getElementById("item13Power");
+	}
+	if(applianceCounter > 13){
+		kwhSix = document.getElementById("item14Power");
+	}
+	if(applianceCounter > 14){
+		kwhSix = document.getElementById("item15Power");
+	}
+}
+
+function calculateEnergyConsumption(){
+	var totalEnergy;
+
+	totalEnergy = totalEnergy + (item1Power * time1)
+}
+
+function getTimeForLocation(String location){
+	if(location.localeCompare("Living Room"))
 }
