@@ -197,7 +197,7 @@ input:hover {
 
 }
 
-#addButton {
+#addButton{
     background-color: black;
       border: 1px solid #000000;
     overflow: hidden;
@@ -216,6 +216,30 @@ input:hover {
 }
 
 #addButton:hover {
+    background-color: white;
+    box-shadow: 0em .1em 1em black;
+    color:black;
+    border: 1px solid rgb(115, 250, 125);
+}
+#continueButton{
+    background-color: black;
+      border: 1px solid #000000;
+    overflow: hidden;
+    color:white;
+      border-radius: 4em;
+      display: inline-block;
+      font: inherit;
+      line-height: 1.5em;
+      padding: 0.5em 1.5em 0.5em 1.3em;
+    margin-left:16px;
+    -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+}
+
+#continueButton:hover {
     background-color: white;
     box-shadow: 0em .1em 1em black;
     color:black;
