@@ -5,6 +5,9 @@ font-weight: 400;
 font-weight: 700;
 font-weight: 800;
 */
+a {
+    text-decoration: none;
+}
 
 body {
     font-family: 'Abel', sans-serif;
