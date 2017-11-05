@@ -401,13 +401,11 @@
                 </script>
 
         </div>
-
-         
+            
         <div class="inputCost">
                 <h2>COST</h2>
                 <h3>Enter your region (US):</h3>
-                <h3>Here is your state energy cost: <span id="stateEnergy"></span></h3>
-                <select name="region" class="state" onchange="calculateEnergyConsumption()" id="region">
+            <select name="region" class="state" onchange="calculateEnergyConsumption()" id="region">
                       <option value="" selected="selected">Select a Region</option>
                       <option value="NE">New England</option>
                       <option value="MA">Middle Atlantic</option>
@@ -417,9 +415,11 @@
                       <option value="ESC">East South Central</option>
                       <option value="WSC">West South Central</option>
                       <option value="M">Mountain</option>
-                    </select>
-        </div>
+                </select>
+                <h3>Here is your state energy cost: <span id="stateEnergy"></span></h3>
 
+        </div>
+         
         <div class="conclusion">
                 <h2>CONCLUSIONS</h2>
                 <h3>This is what we found:</h3>
