@@ -16,6 +16,22 @@ var displayItemThirteen;
 var displayItemFourteen;
 var displayItemFifteen;
 
+var kwhOne;
+var kwhTwo;
+var kwhThree;
+var kwhFour;
+var kwhFive;
+var kwhSix;
+var kwhSeven;
+var kwhEight;
+var kwhNine;
+var kwhTen;
+var kwhEleven;
+var kwhTwelve;
+var kwhThirteen;
+var kwhFourteen;
+var kwhFifteen;
+
 var displayLocationOne;
 var displayLocationTwo;
 var displayLocationThree;
@@ -32,17 +48,14 @@ var displayLocationThirteen;
 var displayLocationFourteen;
 var displayLocationFifteen;
 
-<<<<<<< HEAD
-var time1;
-var time2;
-var time3;
-
-=======
->>>>>>> d7c75871be33d92a6c987f329f53ad7ccc540761
 var bedHour;
-var bathHour;
+var offHour;
 var livHour;
 var kitHour;
+
+var timeResult;
+var regionFactor;
+var regionString;
 
 function itemOneNameStorage(){
 	document.getElementById("app").value = applianceName1.options[applianceName1.selectedIndex].text;
@@ -195,7 +208,6 @@ function itemFifteenLocationStorage(){
 
 function onAddButtonClick(){
 	applianceCounter++;
-	console.log(applianceCounter);
 
 	if(applianceCounter == 6){
 		document.getElementById("applianceForm6").style.display = "block";
@@ -230,7 +242,6 @@ function onAddButtonClick(){
 	}
 }
 
-<<<<<<< HEAD
 function onContinueButtonClick(){
 	kwhOne = document.getElementById("item1Power");
 	kwhTwo = document.getElementById("item2Power");
@@ -241,45 +252,100 @@ function onContinueButtonClick(){
 		kwhSix = document.getElementById("item6Power");
 	}
 	if(applianceCounter > 6){
-		kwhSix = document.getElementById("item7Power");
+		kwhSeven = document.getElementById("item7Power");
 	}
 	if(applianceCounter > 7){
-		kwhSix = document.getElementById("item8Power");
+		kwhEight = document.getElementById("item8Power");
 	}
 	if(applianceCounter > 8){
-		kwhSix = document.getElementById("item9Power");
+		kwhNine = document.getElementById("item9Power");
 	}
 	if(applianceCounter > 9){
-		kwhSix = document.getElementById("item10Power");
+		kwhTen = document.getElementById("item10Power");
 	}
 	if(applianceCounter > 10){
-		kwhSix = document.getElementById("item11Power");
+		kwhEleven = document.getElementById("item11Power");
 	}
 	if(applianceCounter > 11){
-		kwhSix = document.getElementById("item12Power");
+		kwhTwelve = document.getElementById("item12Power");
 	}
 	if(applianceCounter > 12){
-		kwhSix = document.getElementById("item13Power");
+		kwhThirteen= document.getElementById("item13Power");
 	}
 	if(applianceCounter > 13){
-		kwhSix = document.getElementById("item14Power");
+		kwhFourteen = document.getElementById("item14Power");
 	}
 	if(applianceCounter > 14){
-		kwhSix = document.getElementById("item15Power");
+		kwhFifteen = document.getElementById("item15Power");
 	}
 }
 
 function calculateEnergyConsumption(){
 	var totalEnergy;
 
-	totalEnergy = totalEnergy + (item1Power * time1)
+	/*totalEnergy = totalEnergy + ((item1Power * timeAssignment(displayLocationOne)) / 1000)
+	totalEnergy = totalEnergy + ((item2Power * timeAssignment(displayLocationTwo)) / 1000)
+	totalEnergy = totalEnergy + ((item3Power * timeAssignment(displayLocationThree)) / 1000)
+	totalEnergy = totalEnergy + ((item4Power * timeAssignment(displayLocationFour)) / 1000)
+	totalEnergy = totalEnergy + ((item5Power * timeAssignment(displayLocationFive)) / 1000)
+	if(applianceCounter > 5){
+		totalEnergy = totalEnergy + ((item6Power * timeAssignment(displayLocationSix)) / 1000)	
+	}
+	if(applianceCounter > 6){
+		totalEnergy = totalEnergy + ((item7Power * timeAssignment(displayLocationSeven)) / 1000)	
+	}
+	if(applianceCounter > 7){
+		totalEnergy = totalEnergy + ((item8Power * timeAssignment(displayLocationEight)) / 1000)	
+	}
+	if(applianceCounter > 8){
+		totalEnergy = totalEnergy + ((item9Power * timeAssignment(displayLocationNine)) / 1000)	
+	}
+	if(applianceCounter > 9){
+		totalEnergy = totalEnergy + ((item10Power * timeAssignment(displayLocationTen)) / 1000)	
+	}
+	if(applianceCounter > 10){
+		totalEnergy = totalEnergy + ((item11Power * timeAssignment(displayLocationEleven)) / 1000)	
+	}
+	if(applianceCounter > 11){
+		totalEnergy = totalEnergy + ((item12Power * timeAssignment(displayLocationTwelve)) / 1000)	
+	}
+	if(applianceCounter > 12){
+		totalEnergy = totalEnergy + ((item13Power * timeAssignment(displayLocationThirteen)) / 1000)	
+	}
+	if(applianceCounter > 13){
+		totalEnergy = totalEnergy + ((item14Power * timeAssignment(displayLocationFourteen)) / 1000)	
+	}
+	if(applianceCounter > 14){
+		totalEnergy = totalEnergy + ((item15Power * timeAssignment(displayLocationFifteen)) / 1000)	
+	}*/
+
+	document.getElementById("app").value = region.options[region.selectedIndex].value;
+	regionString = region.options[region.selectedIndex].value;
+
+	console.log(regionString);
+	
+	if(regionString.localeCompare("NE") == 0) regionFactor = 121.60;
+	if(regionString.localeCompare("MA") == 0) regionFactor = 112.81;
+	if(regionString.localeCompare("ENC") == 0) regionFactor = 99.87;
+	if(regionString.localeCompare("WNC") == 0) regionFactor = 104.61;
+	if(regionString.localeCompare("SA") == 0) regionFactor = 131.20;
+	if(regionString.localeCompare("ESC") == 0) regionFactor = 130.31;
+	if(regionString.localeCompare("WSC") == 0) regionFactor = 128.81;
+	if(regionString.localeCompare("M") == 0) regionFactor = 99.91;
+
+	console.log(regionFactor);
+	var cout = document.getElementById("stateEnergy");
+	cout.innerHTML = regionFactor;
+
+	}
+
+function timeAssignment(location){
+	if(location.localeCompare("Living Room") == 0) timeResult = livHour;
+	if(location.localeCompare("Office") == 0) timeResult = offHour;
+	if(location.localeCompare("Kitchen") == 0) timeResult = kitHour;
+	if(location.localeCompare("Bedroom") == 0) timeResult = bedHour;
 }
 
-function getTimeForLocation(String location){
-	if(location.localeCompare("Living Room"))
-}
-=======
->>>>>>> d7c75871be33d92a6c987f329f53ad7ccc540761
 function storeBedHour(num){
 	bedHour = num;
 }
