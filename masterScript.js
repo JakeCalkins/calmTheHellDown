@@ -226,3 +226,12 @@ function onAddButtonClick(){
 function storeBedHour(num){
 	bedHour = num;
 }
+function storeBathHour(num){
+	bathHour = num;
+}
+function storeLivHour(num){
+	livHour = num;
+}
+function storeKitHour(num){
+	livHour = num;
+}
