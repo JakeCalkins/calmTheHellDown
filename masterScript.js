@@ -48,12 +48,10 @@ var displayLocationThirteen;
 var displayLocationFourteen;
 var displayLocationFifteen;
 
-<<<<<<< HEAD
 var time1;
 var time2;
 var time3;
 
-=======
 var bedHour;
 var bathHour;
 var livHour;
@@ -290,7 +288,7 @@ function calculateEnergyConsumption(){
 
 function getTimeForLocation(String location){
 	if(location.localeCompare("Living Room"))
-
+}
 function storeBedHour(num){
 	bedHour = num;
 }
