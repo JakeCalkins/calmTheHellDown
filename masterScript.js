@@ -258,45 +258,50 @@ function onAddButtonClick(){
 }
 
 function onContinueButtonClick(){
-	kwhOne = document.getElementById("item1Power");
-	kwhTwo = document.getElementById("item2Power");
-	kwhThree = document.getElementById("item3Power");
-	kwhFour = document.getElementById("item4Power");
-	kwhFive = document.getElementById("item5Power");
+	kwhOne = parseInt(document.getElementById("item1Power").value);
+	kwhTwo = parseInt(document.getElementById("item2Power").value);
+	kwhThree = parseInt(document.getElementById("item3Power").value);
+	kwhFour = parseInt(document.getElementById("item4Power").value);
+	kwhFive = parseInt(document.getElementById("item5Power").value);
 	if(applianceCounter > 5){
-		kwhSix = document.getElementById("item6Power");
+		kwhSix = parseInt(document.getElementById("item6Power").value);
 	}
 	if(applianceCounter > 6){
-		kwhSeven = document.getElementById("item7Power");
+		kwhSeven = parseInt(document.getElementById("item7Power").value);
 	}
 	if(applianceCounter > 7){
-		kwhEight = document.getElementById("item8Power");
+		kwhEight = parseInt(document.getElementById("item8Power").value);
 	}
 	if(applianceCounter > 8){
-		kwhNine = document.getElementById("item9Power");
+		kwhNine = parseInt(document.getElementById("item9Power").value);
 	}
 	if(applianceCounter > 9){
-		kwhTen = document.getElementById("item10Power");
+		kwhTen = parseInt(document.getElementById("item10Power").value);
 	}
 	if(applianceCounter > 10){
-		kwhEleven = document.getElementById("item11Power");
+		kwhEleven = parseInt(document.getElementById("item11Power").value);
 	}
 	if(applianceCounter > 11){
-		kwhTwelve = document.getElementById("item12Power");
+		kwhTwelve = parseInt(document.getElementById("item12Power").value);
 	}
 	if(applianceCounter > 12){
-		kwhThirteen= document.getElementById("item13Power");
+		kwhThirteen= parseInt(document.getElementById("item13Power").value);
 	}
 	if(applianceCounter > 13){
-		kwhFourteen = document.getElementById("item14Power");
+		kwhFourteen = parseInt(document.getElementById("item14Power").value);
 	}
 	if(applianceCounter > 14){
-		kwhFifteen = document.getElementById("item15Power");
+		kwhFifteen = parseInt(document.getElementById("item15Power").value);
 	}
 }
 
 function calculateEnergyConsumption(){
 	var totalEnergy;
+
+	console.log("I will now print displayItemOne: ");
+	console.log(displayLocationOne);
+	console.log(kwhOne);
+
 
 	/*totalEnergy = totalEnergy + ((item1Power * timeAssignment(displayLocationOne)) / 1000)
 	totalEnergy = totalEnergy + ((item2Power * timeAssignment(displayLocationTwo)) / 1000)
@@ -380,5 +385,4 @@ function recommendation(){
 	var TVOut = document.getElementById("TVRecommend");
 	var OvenOut = document.getElementById("OvenRecommend");
 	var FridgeOut = document.getElementById("FridgeRecommend");
-
 }
