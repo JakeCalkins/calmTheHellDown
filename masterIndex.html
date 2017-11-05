@@ -19,7 +19,7 @@
     <div class="mainContainer">
         <div class="inputItems">
                 <h2>INPUT</h2>
-                <h3> Enter your item, its wattage and tag:</h3>
+                <h3> Enter your item, its kiloWatt per hour (kWh) and tag:</h3>
 
                 <!-- Item 1 -->
                 <form>
@@ -318,6 +318,7 @@
         <div id="displayItem13"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation13"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayItem14"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation14"> <p hidden><input type="text" id="app" size="20"></p> </div>
         <div id="displayItem15"> <p hidden><input type="text" id="app" size="20"></p> </div> <div id="displayLocation15"> <p hidden><input type="text" id="app" size="20"></p>
 
+<<<<<<< HEAD
         <button id="addButton" onclick="onAddButtonClick()">Add Electronic</button>
 
         <button id="continueButton" onclick="onContinueButtonClick()">Continue</button>
@@ -399,6 +400,84 @@
 
         </div>
 
+=======
+          <div class="sliders">
+                  <h2>USAGE</h2>
+                  <h3>Use the sliders to determine your usage per room:</h3>
+                  <div class="s1">
+                      <input type="range" min="0" max="15" value="7" class="slider1" id="COMEON">
+                      <p>Hours: <span id="out1"></span></p>
+                  </div>
+
+                  <script>
+                  var slider = document.getElementById("COMEON");
+                  var output = document.getElementById("out1");
+                  output.innerHTML = slider.value;
+
+                  slider.oninput = function() {
+                  	output.innerHTML = this.value;
+                    //console.log(this.value);
+                    storeBedHour(slider.value);
+                  }
+
+                  </script>
+
+                  <div class="s2">
+                      <input type="range" min="0" max="15" value="8" class="slider1" step="1" id = "slid2">
+                      <p>Hours: <span id="demo2"></span></p>
+                  </div>
+
+                  <script>
+                  var slider1 = document.getElementById("slid2");
+                  var output1 = document.getElementById("demo2");
+                  output1.innerHTML = slider1.value;
+
+                  slider1.oninput = function() {
+                  	output1.innerHTML = this.value;
+                    //console.log(slider1.value);
+                    storeOfficeHour(slider1.value);
+                  }
+
+                  </script>
+
+                  <div class="s3">
+                      <input type="range" min="0" max="15" value="2" class="slider1" step="1" id ="slid3">
+                      <p>Hours: <span id="demo3"></span></p>
+                  </div>
+
+                  <script>
+                  var slider2 = document.getElementById("slid3");
+                  var output2 = document.getElementById("demo3");
+                  output2.innerHTML = slider2.value;
+
+                  slider2.oninput = function() {
+                  	output2.innerHTML = this.value;
+                    //console.log(slider1.value);
+                    storeLivHour(slider2.value);
+                  }
+
+                  </script>
+
+                  <div class="s4">
+                      <input type="range" min="0" max="15" value="13" class="slider1" step="1" id="slid4">
+                      <p>Hours: <span id="demo4"></span></p>
+                  </div>
+
+                  <script>
+                  var slider3 = document.getElementById("slid4");
+                  var output3 = document.getElementById("demo4");
+                  output3.innerHTML = slider3.value;
+
+                  slider3.oninput = function() {
+                    output3.innerHTML = this.value;
+                    //console.log(slider1.value);
+                    storeKitHour(slider3.value);
+                  }
+
+                  </script>
+
+          </div>
+>>>>>>> 634b830fc38b3d957643df58738578567c681f65
         <div class="inputCost">
                 <h2>COST</h2>
                 <h3>Enter your region (US):</h3>
@@ -423,5 +502,7 @@
         <div class="recommendations">
                 <h2>RECOMMENDATIONS</h2>
                 <h3>This is what we found:</h3>
+                <p>Here is your recommendation: <span id="CompRecommend"></span><span id="TVRecommend"></span><span id="OvenRecommend"></span><span id="FridgeRecommend"></span></p>
+                <input type="button" value="ButtonCalc" onclick="recommendation();">
         </div>
 </body>
