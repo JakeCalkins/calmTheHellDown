@@ -48,10 +48,17 @@ var displayLocationThirteen;
 var displayLocationFourteen;
 var displayLocationFifteen;
 
+<<<<<<< HEAD
 var time1;
 var time2;
 var time3;
 
+=======
+var bedHour;
+var bathHour;
+var livHour;
+var kitHour;
+>>>>>>> d311bf4846fca134dd81eb674acadb35440f49fc
 
 function itemOneNameStorage(){
 	document.getElementById("app").value = applianceName1.options[applianceName1.selectedIndex].text;
@@ -238,6 +245,7 @@ function onAddButtonClick(){
 	}
 }
 
+<<<<<<< HEAD
 function onContinueButtonClick(){
 	kwhOne = document.getElementById("item1Power");
 	kwhTwo = document.getElementById("item2Power");
@@ -284,4 +292,17 @@ function calculateEnergyConsumption(){
 
 function getTimeForLocation(String location){
 	if(location.localeCompare("Living Room"))
+=======
+function storeBedHour(num){
+	bedHour = num;
+}
+function storeBathHour(num){
+	bathHour = num;
+}
+function storeLivHour(num){
+	livHour = num;
+}
+function storeKitHour(num){
+	livHour = num;
+>>>>>>> d311bf4846fca134dd81eb674acadb35440f49fc
 }
