@@ -33,7 +33,7 @@ var displayLocationFourteen;
 var displayLocationFifteen;
 
 var bedHour;
-var bathHour;
+var officeHour;
 var livHour;
 var kitHour;
 
@@ -226,8 +226,8 @@ function onAddButtonClick(){
 function storeBedHour(num){
 	bedHour = num;
 }
-function storeBathHour(num){
-	bathHour = num;
+function storeOfficeHour(num){
+	officeHour = num;
 }
 function storeLivHour(num){
 	livHour = num;
