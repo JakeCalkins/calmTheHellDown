@@ -52,11 +52,8 @@ var nameArr = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14",
 var locArr = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19"];
 
 var bedHour;
-<<<<<<< HEAD
 var offHour;
-=======
 var officeHour;
->>>>>>> 634b830fc38b3d957643df58738578567c681f65
 var livHour;
 var kitHour;
 
@@ -278,8 +275,6 @@ function onAddButtonClick(){
 		document.getElementById("addButton").style.display = "none";
 	}
 }
-
-<<<<<<< HEAD
 function onContinueButtonClick(){
 	kwhOne = document.getElementById("item1Power");
 	kwhTwo = document.getElementById("item2Power");
@@ -383,9 +378,6 @@ function timeAssignment(location){
 	if(location.localeCompare("Kitchen") == 0) timeResult = kitHour;
 	if(location.localeCompare("Bedroom") == 0) timeResult = bedHour;
 }
-=======
-
->>>>>>> 634b830fc38b3d957643df58738578567c681f65
 
 function storeBedHour(num){
 	bedHour = num;
