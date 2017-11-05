@@ -32,6 +32,10 @@ var displayLocationThirteen;
 var displayLocationFourteen;
 var displayLocationFifteen;
 
+var bedHour;
+var bathHour;
+var livHour;
+var kitHour;
 
 function itemOneNameStorage(){
 	document.getElementById("app").value = applianceName1.options[applianceName1.selectedIndex].text;
@@ -217,4 +221,8 @@ function onAddButtonClick(){
 		document.getElementById("applianceForm15").style.display = "block";
 		document.getElementById("addButton").style.display = "none";
 	}
+}
+
+function storeBedHour(num){
+	bedHour = num;
 }

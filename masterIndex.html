@@ -350,10 +350,28 @@
         <div class="sliders">
                 <h2>USAGE</h2>
                 <h3>Use the sliders to determine your usage per room:</h3>
-                <div class="slider">
+                <div class="slider1">
                     <input type="range" min="0" max="15" value="7" class="slider1" id="COMEON">
                     <p>Value: <span id="demo"></span></p>
                 </div>
+
+                <script>
+                var slider1 = document.getElementById("COMEON");
+                output = document.getElementById("demo");
+                output.innerHTML = slider1.value;
+
+                slider1.oninput = function() {
+                	output.innerHTML = this.value;
+                  //console.log(slider1.value);
+                  storeBedHour(slider1.value);
+                }
+
+                </script>
+
+                <div class="slider2">
+                    <input type="range" min="0" max="15" value="8" class="slider1" step="1">
+                </div>
+
                 <script>
                 var slider1 = document.getElementById("COMEON");
                 output = document.getElementById("demo");
@@ -366,13 +384,11 @@
                 }
 
                 </script>
-                <div class="slider1">
-                    <input type="range" min="0" max="15" value="8" class="slider1" step="1">
-                </div>
-                <div class="slider2">
+
+                <div class="slider3">
                     <input type="range" min="0" max="15" value="2" class="slider1" step="1">
                 </div>
-                <div class="slider3">
+                <div class="slider4">
                     <input type="range" min="0" max="15" value="13" class="slider1" step="1">
                 </div>
 
