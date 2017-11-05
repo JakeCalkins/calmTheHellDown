@@ -16,22 +16,6 @@ var displayItemThirteen;
 var displayItemFourteen;
 var displayItemFifteen;
 
-var kwhOne;
-var kwhTwo;
-var kwhThree;
-var kwhFour;
-var kwhFive;
-var kwhSix;
-var kwhSeven;
-var kwhEight;
-var kwhNine;
-var kwhTen;
-var kwhEleven;
-var kwhTwelve;
-var kwhThirteen;
-var kwhFourteen;
-var kwhFifteen;
-
 var displayLocationOne;
 var displayLocationTwo;
 var displayLocationThree;
@@ -52,14 +36,13 @@ var nameArr = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14",
 var locArr = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19"];
 
 var bedHour;
+<<<<<<< HEAD
 var offHour;
+=======
+>>>>>>> 058a7002e18f0e35786d044143ab667b863cfd7c
 var officeHour;
 var livHour;
 var kitHour;
-
-var timeResult;
-var regionFactor;
-var regionString;
 
 function itemOneNameStorage(){
 	document.getElementById("app").value = applianceName1.options[applianceName1.selectedIndex].text;
@@ -242,6 +225,7 @@ function itemFifteenLocationStorage(){
 
 function onAddButtonClick(){
 	applianceCounter++;
+	console.log(applianceCounter);
 
 	if(applianceCounter == 6){
 		document.getElementById("applianceForm6").style.display = "block";
@@ -275,6 +259,7 @@ function onAddButtonClick(){
 		document.getElementById("addButton").style.display = "none";
 	}
 }
+<<<<<<< HEAD
 function onContinueButtonClick(){
 	kwhOne = document.getElementById("item1Power");
 	kwhTwo = document.getElementById("item2Power");
@@ -378,6 +363,10 @@ function timeAssignment(location){
 	if(location.localeCompare("Kitchen") == 0) timeResult = kitHour;
 	if(location.localeCompare("Bedroom") == 0) timeResult = bedHour;
 }
+=======
+
+
+>>>>>>> 058a7002e18f0e35786d044143ab667b863cfd7c
 
 function storeBedHour(num){
 	bedHour = num;
@@ -393,7 +382,7 @@ function storeKitHour(num){
 }
 
 function recommendation(){
-	
+
 	var CompOut = document.getElementById("CompRecommend");
 	var TVOut = document.getElementById("TVRecommend");
 	var OvenOut = document.getElementById("OvenRecommend");
